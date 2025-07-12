@@ -1,0 +1,29 @@
+digraph "alu" {
+label="alu";
+rankdir="LR";
+remincross=true;
+n7 [ shape=octagon, label="Y", color="black", fontcolor="black" ];
+n8 [ shape=octagon, label="SEL", color="black", fontcolor="black" ];
+n9 [ shape=octagon, label="B", color="black", fontcolor="black" ];
+n10 [ shape=octagon, label="A", color="black", fontcolor="black" ];
+c11 [ shape=record, label="{{<p10> A|<p9> B}|$5\n$or|{<p7> Y}}",  ];
+c12 [ shape=record, label="{{<p10> A|<p9> B}|$4\n$and|{<p7> Y}}",  ];
+c13 [ shape=record, label="{{<p10> A|<p9> B}|$3\n$sub|{<p7> Y}}",  ];
+c14 [ shape=record, label="{{<p10> A|<p9> B}|$2\n$add|{<p7> Y}}",  ];
+p0 [shape=box, style=rounded, label="PROC $1\ndesigns/alu/src/alu.v:7.5-14.8", ];
+c11:p7:e -> p0:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n10:e -> c11:p10:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n10:e -> c12:p10:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n10:e -> c13:p10:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n10:e -> c14:p10:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+c12:p7:e -> p0:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+c13:p7:e -> p0:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+c14:p7:e -> p0:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+p0:e -> n7:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n7:e -> p0:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n8:e -> p0:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n9:e -> c11:p9:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n9:e -> c12:p9:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n9:e -> c13:p9:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n9:e -> c14:p9:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+}

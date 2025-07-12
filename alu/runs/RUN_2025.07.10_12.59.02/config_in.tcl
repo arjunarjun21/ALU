@@ -1,0 +1,8 @@
+set ::env(PDK) "sky130A"
+set ::env(PDKPATH) "/home/arjun/.volare/sky130A"
+set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
+set ::env(SCLPATH) "/home/arjun/.volare/sky130A/sky130_fd_sc_hd"
+set ::env(DESIGN_DIR) "/openlane/designs/alu"
+set ::env(DESIGN_NAME) "alu"
+set ::env(VERILOG_FILES) "src/alu.v"
+set ::env(TOP_MODULE) "alu"

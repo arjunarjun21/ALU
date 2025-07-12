@@ -1,0 +1,11 @@
+[ERROR]: Step 0 (verilator_lint_check) failed with error:
+-code 1 -level 0 -errorstack {INNER loadArrayStk CALL run_verilator CALL run_verilator_step CALL {run_non_interactive_mode -design alu}} -errorcode {TCL READ VARNAME} -errorinfo {no such variable
+    (read trace on "::env(VERILOG_FILES)")
+    invoked from within
+"lappend arg_list {*}$::env(VERILOG_FILES)"
+    (procedure "run_verilator" line 41)
+    invoked from within
+"run_verilator"
+    (procedure "run_verilator_step" line 3)
+    invoked from within
+"run_verilator_step"} -errorline 1

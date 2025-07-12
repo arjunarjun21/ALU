@@ -1,0 +1,7 @@
+{
+  "DESIGN_NAME": "alu",
+  "TOP_MODULE": "alu",
+  "VERILOG_FILES": ["designs/alu/src/alu.v"],
+  "FP_CORE_UTIL": 30
+}
+

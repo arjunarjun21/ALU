@@ -1,0 +1,10 @@
+%Error: Cannot find file containing module: src/alu.v
+%Error: This may be because there's no search path specified with -I<dir>.
+        ... Looked in:
+             src/alu.v
+             src/alu.v.v
+             src/alu.v.sv
+             obj_dir/src/alu.v
+             obj_dir/src/alu.v.v
+             obj_dir/src/alu.v.sv
+%Error: Exiting due to 2 error(s)
