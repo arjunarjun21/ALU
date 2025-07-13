@@ -1,0 +1,1 @@
+lvs {/openlane/designs/alu/runs/RUN_2025.07.10_13.13.56/results/signoff/alu.spice alu} {/openlane/designs/alu/runs/RUN_2025.07.10_13.13.56/tmp/signoff/36-alu.pnl.v alu} /home/arjun/.volare/sky130A/libs.tech/netgen/sky130A_setup.tcl /openlane/designs/alu/runs/RUN_2025.07.10_13.13.56/logs/signoff/39-alu.lef.lvs.log -json
